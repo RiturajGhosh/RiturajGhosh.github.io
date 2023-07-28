@@ -1,200 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Portofolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>Portofolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-/* Style the body */
-body {
-  font-family: Georgia, serif;
-  margin: 0;
-}
+      /* Style the body */
+      body {
+        font-family: Georgia, serif;
+        margin: 0;
+      }
 
-/* Header/logo Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
+      /* Header/logo Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+      }
 
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
+      /* Increase the font size of the heading */
+      .header h1 {
+        font-size: 40px;
+      }
 
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+      /* Style the top navigation bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
 
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
+      /* Style the navigation bar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
+      /* Right-aligned link */
+      .navbar a.right {
+        float: right;
+      }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
+      /* Change color on hover */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
+      /* Column container */
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
+      /* Main column */
+      .main {
+        -ms-flex: 70%; /* IE10 */
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 0px;
-}
-.fakeimgMyimg{
-  background-color: #aaa;
-  width: 80%;
-  padding: 0px;
-}
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background:#02ad80;
-  color:white
-}
+      /* Fake image, just for this example */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+      }
+      .fakeimgMyimg {
+        background-color: #aaa;
+        width: 80%;
+        padding: 0px;
+      }
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #02ad80;
+        color: white;
+      }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {
+          flex-direction: column;
+        }
+      }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body>
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Rituraj Ghosh</h1>
+      <p>A journal of memories</p>
+    </div>
 
-<div class="header">
-  <h1>Rituraj Ghosh</h1>
-  <p>A journal of memories</p>
-</div>
-
-<!-- <div class="navbar">
+    <!-- <div class="navbar">
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#" class="right">Link</a>
 </div> -->
 
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <img src="myImage (2).jpeg" class="fakeimg" style="height:300px;" alt="Italian Trulli"/>
-    <p>Nowadays I am spending most of my time in software engineering. </p>
-    <h3>Brief Info</h3>
-    <h5>Mahesh sri Ramkrishna Ashram vidyalaya</h5>
-    <img src="mySchool.jpeg" class="fakeimg" style="height:160px;"/><br>
-    <p>Spent 13 beautiful years of my life here. Most of my values and virtues I gained from this place.</p>
-    <h5>Academy Of Technnology</h5>
-    <img src="myCollege.jpeg" class="fakeimg" style="height:160px;"/><br>
-    <p>Totally cherrished these 4 years in ECE dept. Have attended classes with highest possible concentration as well as bunked many classes.
-      Gained many memories and friends to carry through-out the entire life.</p>
-  </div>
-  <div class="main">
-    <h2>PLACES VISITED</h2>
-     <h5>Darjeeling, Mar 17, 2023</h5>
-    <img src="darjeeling.jpg" class="fakeimg" style="height:200px;" alt="darjeeling"/>
-    <p>Brief description..</p>
-    <p>A long awaited trip with college friends. 
-    From our 2nd year onwards we were planning to visit darjeeling, but always something would cause the plan to be abandoned. Finally this time it worked out. Me and two of my friend we went
-    for darjeeling and few nearby offbeat places. Be it taking a sip of tea on darjeeling mall, or be it hopping the nepali markets, darjeeling has its own flavour comparing to the other hill stations.
-    The low clouds, dense pine forest and the road side Thukpa (a nepaleese dish) it may call us to buckle up for darjeeling again. See you soon Darjeeling.
-    </p>
-    <br>
-    <h5>Banaras, Mar 18, 2022</h5>
-    <img src="banaras.jpeg" class="fakeimg" style="height:200px;" alt="banaras"/>
-    <p>Brief description..</p>
-    <p>It was a direct call from Shiva himself it seemed. Totally unplanned. I went out at our local medicine shop for my mother, there suddenly I met with one of my school mate with whom after school days
-    I have not even contacted, he told on the day of holi they are travelling to banaras, then and there I planned to join them, I had booked train ticket in tatkal, unsure 
-    about the returning train. We stayed 2-3 days there wandering through the narrow alleys of banaras. I sensed a thousand years old city still blessing us every moment with its spriritual majesty.
-    We gave a visit to Lord shiva ar sri Viswanath temple. The boat ride from Manikarnika ghat to Assi ghat while seeing the sunrise fills our heart with gratitude for anything and everythig.
-    Again, Jay sri Viswanath ki jay. _/\_ Namaskar</p>
-    <br>
-    <h5>The Ponmuri hills, Dec 7, 2019</h5>
-    <img src="ponmuri1.jpeg" class="fakeimg" style="height:200px;" alt="ponmuri"/>
-    <p>Brief description..</p>
-    <p>It was a bike trip with my beloved colleague and college senior Babul da.
-       One fine morning we set out for this beautiful valley in kerala near Thiruvananthapuram. 
-       For us it was a ride of around 60 km. The last part of the journey was amidst a wildlife sanctuary, 
-       riding amidst the dense jungle one can surely feel their senses expanding and getting connected with  mother nature.</p>
-    <br>
-    <h5>Kanyakumari, Dec 23, 2019</h5>
-    <img src="kanyakumari.jpeg" class="fakeimg" style="height:200px;" alt="kanyakumari"/>
-    <p>Brief description..</p>
-    <p>There was always an excitement to see and feel the southest point of India, 
-      valued for both geoghraphical and spiritual riches.
-      So went with 2 of my college friend in a totally unplanned and sudden manner. I woke up by a call from my friend that bro we are coming and we will be in Trivandrum central after around 2 hours, so pack your bags.
-      Like that this journey started.
-      Watching the sunrise from the southest point of India would surely bring sense of completion and joy. Let the waves take your sorrows away and bring joy to you.:)</p>
-     <br>
-    <h5>Pelling, Dec 04, 2014</h5>
-    <img src="pelling_1024.jpg" class="fakeimg" style="height:200px;" alt="pelling"/>
-    <p>Brief description..</p>
-    <p>It is a memory to be cherished forever. In my class 11, our school arranged a educational tour to Pelling, sikkim, in a group of
-    65 classmates. It was the first time I was seeing the mountains. I stil remember how awstruck I was seeing such beauty of nature.
-    The camp fire in the dark night with a clear sky full of celestial bodies,singing chorus with a guitar strumming as loud as it can, friends encircled by holding eachother's shoulder and affection of the teachers, everything
-    together made the tour something to be remembered. Also this trip revealed a crucial question before me and also it answered. The thought came to my mind that how
-    one can feel the nature at its' best, how one can unite themselve with the nature as close as it is possible?</p>
-  </div>
-</div>
+    <div class="row">
+      <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <img
+          src="myImage.jpeg"
+          class="fakeimg"
+          style="height: 200px"
+          alt="Italian Trulli"
+        />
+        <p>Nowadays I am spending most of my time in software engineering.</p>
+        <h3>Brief Info</h3>
+        <h5>Mahesh sri Ramkrishna Ashram vidyalaya</h5>
+        <img src="mySchool.jpeg" class="fakeimg" style="height: 160px" /><br />
+        <p>
+          Spent 13 beautiful years of my life here. Most of my values and
+          virtues I gained from this place.
+        </p>
+        <h5>Academy Of Technnology</h5>
+        <img src="myCollege.jpeg" class="fakeimg" style="height: 160px" /><br />
+        <p>
+          Totally cherrished these 4 years in ECE dept. Have attended classes
+          with highest possible concentration as well as bunked many classes.
+          Gained many memories and friends to carry through-out the entire life.
+        </p>
+      </div>
+      <div class="main">
+        <h2>PLACES VISITED</h2>
+        <h5>Darjeeling, Mar 17, 2023</h5>
+        <img
+          src="darjeeling.jpg"
+          class="fakeimg"
+          style="height: 200px"
+          alt="darjeeling"
+        />
+        <p>Brief description..</p>
+        <p>
+          A long awaited trip with college friends. From our 2nd year onwards we
+          were planning to visit darjeeling, but always something would cause
+          the plan to be abandoned. Finally this time it worked out. Me and two
+          of my friend we went for darjeeling and few nearby offbeat places. Be
+          it taking a sip of tea on darjeeling mall, or be it hopping the nepali
+          markets, darjeeling has its own flavour comparing to the other hill
+          stations. The low clouds, dense pine forest and the road side Thukpa
+          (a nepaleese dish) it may call us to buckle up for darjeeling again.
+          See you soon Darjeeling.
+        </p>
+        <br />
+        <h5>Banaras, Mar 18, 2022</h5>
+        <img
+          src="banaras.jpeg"
+          class="fakeimg"
+          style="height: 200px"
+          alt="banaras"
+        />
+        <p>Brief description..</p>
+        <p>
+          It was a direct call from Shiva himself it seemed. Totally unplanned.
+          I went out at our local medicine shop for my mother, there suddenly I
+          met with one of my school mate with whom after school days I have not
+          even contacted, he told on the day of holi they are travelling to
+          banaras, then and there I planned to join them, I had booked train
+          ticket in tatkal, unsure about the returning train. We stayed 2-3 days
+          there wandering through the narrow alleys of banaras. I sensed a
+          thousand years old city still blessing us every moment with its
+          spriritual majesty. We gave a visit to Lord shiva ar sri Viswanath
+          temple. The boat ride from Manikarnika ghat to Assi ghat while seeing
+          the sunrise fills our heart with gratitude for anything and everythig.
+          Again, Jay sri Viswanath ki jay. _/\_ Namaskar
+        </p>
+        <br />
+        <h5>The Ponmuri hills, Dec 7, 2019</h5>
+        <img
+          src="ponmuri1.jpeg"
+          class="fakeimg"
+          style="height: 200px"
+          alt="ponmuri"
+        />
+        <p>Brief description..</p>
+        <p>
+          It was a bike trip with my beloved colleague and college senior Babul
+          da. One fine morning we set out for this beautiful valley in kerala
+          near Thiruvananthapuram. For us it was a ride of around 60 km. The
+          last part of the journey was amidst a wildlife sanctuary, riding
+          amidst the dense jungle one can surely feel their senses expanding and
+          getting connected with mother nature.
+        </p>
+        <br />
+        <h5>Kanyakumari, Dec 23, 2019</h5>
+        <img
+          src="kanyakumari.jpeg"
+          class="fakeimg"
+          style="height: 200px"
+          alt="kanyakumari"
+        />
+        <p>Brief description..</p>
+        <p>
+          There was always an excitement to see and feel the southest point of
+          India, valued for both geoghraphical and spiritual riches. So went
+          with 2 of my college friend in a totally unplanned and sudden manner.
+          I woke up by a call from my friend that bro we are coming and we will
+          be in Trivandrum central after around 2 hours, so pack your bags. Like
+          that this journey started. Watching the sunrise from the southest
+          point of India would surely bring sense of completion and joy. Let the
+          waves take your sorrows away and bring joy to you.:)
+        </p>
+        <br />
+        <h5>Pelling, Dec 04, 2014</h5>
+        <img
+          src="pelling_1024.jpg"
+          class="fakeimg"
+          style="height: 200px"
+          alt="pelling"
+        />
+        <p>Brief description..</p>
+        <p>
+          It is a memory to be cherished forever. In my class 11, our school
+          arranged a educational tour to Pelling, sikkim, in a group of 65
+          classmates. It was the first time I was seeing the mountains. I stil
+          remember how awstruck I was seeing such beauty of nature. The camp
+          fire in the dark night with a clear sky full of celestial
+          bodies,singing chorus with a guitar strumming as loud as it can,
+          friends encircled by holding eachother's shoulder and affection of the
+          teachers, everything together made the tour something to be
+          remembered. Also this trip revealed a crucial question before me and
+          also it answered. The thought came to my mind that how one can feel
+          the nature at its' best, how one can unite themselve with the nature
+          as close as it is possible?
+        </p>
+      </div>
+    </div>
 
-<div class="footer">
-  <h2>Made with Love :)</h2>
-</div>
-
-</body>
+    <div class="footer">
+      <h2>Made with Love :)</h2>
+    </div>
+  </body>
 </html>
